@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29728.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggressionScorer", "AggressionScorer\AggressionScorer.csproj", "{1D319C41-EC1A-4D31-B6CC-0C5FB5CF82A1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggressionAPI", "AggressionAPI\AggressionAPI.csproj", "{A0A92824-60B3-49CB-AB58-BEA5F8068354}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggressionScorerModel", "AggressionScorerModel\AggressionScorerModel.csproj", "{3E267E23-5530-4F4A-8466-4826B7058122}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AggressionScorerModel", "AggressionScorerModel\AggressionScorerModel.csproj", "{3E267E23-5530-4F4A-8466-4826B7058122}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CCE09F15-0E9A-4424-A9D4-F77EBBFE8B90}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
