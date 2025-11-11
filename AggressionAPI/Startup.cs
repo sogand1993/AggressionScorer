@@ -1,3 +1,4 @@
+using AggressionScorerModel;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -14,11 +15,15 @@ namespace AggressionAPI
         }
 
         public IConfiguration Configuration { get; }
-
+            private readonly string myAllowOrigin ="_myAllow";
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options => { options.AddPolicy("AllowAll",p=>p.AllowAnyOrigin()); });
             services.AddControllers();
+            services.AddAggressionScorePredictionEnginPool();
+            services.AddSingleton<AggressionScore>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -32,7 +37,7 @@ namespace AggressionAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseCors("AllowAll");
 
             app.UseAuthorization();
 
